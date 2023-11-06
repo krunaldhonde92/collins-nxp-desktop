@@ -1,0 +1,3 @@
+[submodule "sources/meta-collins-bsp"]
+	path = sources/meta-collins-bsp
+	url = https://github.com/krunaldhonde92/meta-collins-bsp.git
