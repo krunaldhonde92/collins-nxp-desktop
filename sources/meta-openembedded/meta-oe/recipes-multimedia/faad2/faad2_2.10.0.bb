@@ -5,7 +5,7 @@ LICENSE = "GPL-2.0-only"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=381c8cbe277a7bc1ee2ae6083a04c958"
 
-#LICENSE_FLAGS = "commercial"
+LICENSE_FLAGS = "commercial"
 
 PV .= "+git${SRCPV}"
 

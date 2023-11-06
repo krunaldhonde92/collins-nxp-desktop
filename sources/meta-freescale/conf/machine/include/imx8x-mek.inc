@@ -21,22 +21,22 @@ USE_VT = "0"
 KERNEL_DEVICETREE = " \
     freescale/${KERNEL_DEVICETREE_BASENAME}.dtb \
 "
-#KERNEL_DEVICETREE:append:use-nxp-bsp = " \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-dsi-rm67191.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-dsi-rm67191-rpmsg.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-enet2-tja1100.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-it6263-lvds0-dual-channel.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-it6263-lvds0-dual-channel-rpmsg.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-it6263-lvds1-dual-channel.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-it6263-lvds1-dual-channel-rpmsg.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-jdi-wuxga-lvds0-panel.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-jdi-wuxga-lvds0-panel-rpmsg.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-jdi-wuxga-lvds1-panel.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-jdi-wuxga-lvds1-panel-rpmsg.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-ov5640.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-ov5640-rpmsg.dtb \
-#    freescale/${KERNEL_DEVICETREE_BASENAME}-rpmsg.dtb \
-#"
+KERNEL_DEVICETREE:append:use-nxp-bsp = " \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-dsi-rm67191.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-dsi-rm67191-rpmsg.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-enet2-tja1100.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-it6263-lvds0-dual-channel.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-it6263-lvds0-dual-channel-rpmsg.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-it6263-lvds1-dual-channel.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-it6263-lvds1-dual-channel-rpmsg.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-jdi-wuxga-lvds0-panel.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-jdi-wuxga-lvds0-panel-rpmsg.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-jdi-wuxga-lvds1-panel.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-jdi-wuxga-lvds1-panel-rpmsg.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-ov5640.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-ov5640-rpmsg.dtb \
+    freescale/${KERNEL_DEVICETREE_BASENAME}-rpmsg.dtb \
+"
 
 UBOOT_MAKE_TARGET = \
     "${@bb.utils.contains('MACHINE_FEATURES', 'optee', '', \
