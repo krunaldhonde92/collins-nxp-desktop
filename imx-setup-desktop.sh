@@ -1,0 +1,1 @@
+sources/meta-nxp-desktop/tools/imx-setup-desktop.sh
