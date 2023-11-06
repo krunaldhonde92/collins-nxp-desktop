@@ -40,6 +40,10 @@ IMAGE_INSTALL += "\
 	tensorflow-lite \
 	tensorflow-lite-vx-delegate \
 	${ML_NNSTREAMER_PKGS} \
+	gawk \
+	ffmpeg \
+	vlc \
+	v4l2loopback \
 	opencv \
         udev-extraconf \
 "

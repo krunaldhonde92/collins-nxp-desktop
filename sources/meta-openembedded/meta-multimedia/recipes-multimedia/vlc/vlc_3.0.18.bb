@@ -10,7 +10,7 @@ DEPENDS = "coreutils-native fribidi libtool libgcrypt libgcrypt-native bison-nat
    tremor faad2 ffmpeg flac alsa-lib \
    lua-native lua libidn \
    avahi jpeg xz libmodplug mpeg2dec \
-   libmtp libopus orc libsamplerate0 libusb1 schroedinger taglib \
+   libopus orc libsamplerate0 libusb1 schroedinger taglib \
    tiff"
 
 LDFLAGS:append:riscv64 = " -latomic"
